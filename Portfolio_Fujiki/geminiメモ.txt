@@ -1,0 +1,48 @@
+footer-containerのwidthを1280pxで画面の左揃えにしてある。その右端にぴったり揃えるようにtotopボタンを配置したい.画面幅が1280pxより広いときでも、footer-container の右端のライン（内側）にぴったり吸い付くように「To Top」ボタンを配置する方法です。最も崩れにくく、現在のレイアウト（左揃え）に影響を与えない「position: absolute; と left: 1280px;」を組み合わせた実装がおすすめです。実装コードHTML
+
+html<div class="footer-container">
+  <!-- フッターのメインコンテンツ -->
+  <div class="footer-content">フッターの内容</div>
+
+  <!-- To Top ボタン（footer-containerの閉じタグの直前に配置） -->
+  <button class="to-top-btn">↑</button>
+</div>
+コードは注意してご使用ください。
+
+CSScss/* 既存のフッター設定 */
+.footer-container {
+  position: relative; /* ボタンの基準位置にするために必須 */
+  width: 1280px;
+  margin-left: 0;     /* 左揃え */
+  background-color: #f5f5f5; /* （確認用） */
+}
+
+/* To Top ボタンの配置 */
+.to-top-btn {
+  position: absolute;
+  bottom: 20px;       /* 下からの浮かせ具合（お好みで） */
+  left: 1280px;       /* 1280pxの右端を基準点にする */
+  transform: translateX(-100%); /* ボタンの横幅分だけ左に押し戻して右端にぴったり揃える */
+  
+  /* ボタンの見た目（お好みで調整してください） */
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+コードは注意してご使用ください。
+
+なぜこれでぴったり揃うのか？left: 1280px; を指定することで、ボタンの「左端」が footer-container の「右端（1280px地点）」に配置されます（このままだと枠からはみ出します）。そこに transform: translateX(-100%); を掛け合わせることで、ボタン自身の横幅分だけ左側へスライドするため、結果として右端のラインにミリ単位で綺麗に揃います。レスポンシブ（画面幅が1280px未満になったとき）の注意点画面幅が1280pxより小さくなると、ボタンが画面の右側に隠れて横スクロールが発生してしまいます。画面幅が狭くなったときは、以下のように画面の右端に固定（position: fixed;）切り替えるメディアクエリを追加しておくと安心です。
+
+css@media (max-width: 1280px) {
+  .to-top-btn {
+    position: fixed;
+    left: auto;
+    right: 20px; /* 画面右端から20pxの位置に固定 */
+    bottom: 20px;
+    transform: none; /* スライドを解除 */
+  }
+}

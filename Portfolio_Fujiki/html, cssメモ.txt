@@ -1,0 +1,22 @@
+<h2>見出しのメモ（ABOUT ME と わたしについてを2行の見出しにする。英語補足を小さく1行目、日本語見出しをメインで2行目に）
+
+【html書き方】
+<h2 class="section-title">
+  <span class="en">ABOUT ME</span>
+  わたしについて
+</h2>
+
+【css書き方】
+.section-title {
+  font-size: 28px;       /* 「わたしについて」の大きさ */
+  color: #333333;
+  line-height: 1.5;
+}
+
+.section-title .en {
+  display: block;        /* 強制的に改行させて2行にする */
+  font-size: 14px;       /* 「ABOUT ME」を小さくする */
+  color: #888888;        /* 色を薄くして補足らしさを出す */
+  font-weight: normal;
+  margin-bottom: 5px;    /* 下の日本語との隙間 */
+}

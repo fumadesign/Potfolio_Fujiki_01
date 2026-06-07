@@ -54,3 +54,28 @@ WORK FLOW
 CONTACT
 
 ©2026 fuma design
+
+==以下google formの検証ツールからの情報==
+googleフォーム正式（？）リンク
+https://docs.google.com/forms/u/0/d/e/1FAIpQLSdLePrIBzXU5JbsBwzNGz2Bdhxi6LG5f37WIcCJhVoJs6Uv-g/formResponse
+
+お名前部分
+data-params="%.@.[1131194292,&quot;お名前&quot;,&quot;（例）田中　太郎&quot;,0,[[2073678484,null,true,null,null,null,null,null,null,null,[]]],null,null,null,null,null,null,[null,&quot;お名前&quot;],[null,&quot;（例）田中　太郎&quot;]],&quot;i1&quot;,&quot;i2&quot;,&quot;i3&quot;,false,&quot;i4&quot;]"
+2073678484
+
+フリガナ部分
+data-params="%.@.[1520597521,&quot;フリガナ&quot;,&quot;（例）タナカ　タロウ&quot;,0,[[965266026,null,true,null,null,null,null,null,null,null,[]]],null,null,null,null,null,null,[null,&quot;フリガナ&quot;],[null,&quot;（例）タナカ　タロウ&quot;]],&quot;i6&quot;,&quot;i7&quot;,&quot;i8&quot;,false,&quot;i9&quot;]"
+965266026
+
+メールアドレス部分
+data-params="%.@.[2000390955,&quot;メールアドレス\n&quot;,&quot;（例）tanakatarou@gmail.com&quot;,0,[[1402230953,null,true,null,null,null,null,null,null,null,[]]],null,null,null,null,null,null,[null,&quot;メールアドレス\u003cdiv\u003e\u003cbr\u003e\u003c/div\u003e&quot;],[null,&quot;（例）tanakatarou@gmail.com&quot;]],&quot;i11&quot;,&quot;i12&quot;,&quot;i13&quot;,false,&quot;i14&quot;]"
+1402230953
+
+ご相談カテゴリ部分
+data-params="%.@.[15523112,&quot;ご相談カテゴリ&quot;,null,3,[[1511403208,[[&quot;バナー広告制作&quot;,null,null,null,false],[&quot;LP（ランディングページ）制作&quot;,null,null,null,false],[&quot;その他&quot;,null,null,null,false]],true,null,null,null,null,null,false,null,[]]],null,null,null,null,null,null,[null,&quot;ご相談カテゴリ&quot;]],&quot;i16&quot;,&quot;i17&quot;,&quot;i18&quot;,false,&quot;i19&quot;]"
+1511403208
+
+ご相談・ご依頼内容部分
+data-params="%.@.[296227428,&quot;ご相談・ご依頼内容&quot;,&quot;お仕事の概要、ご相談内容等ご記入お願いいたします。\n●制作物\n●スケジュール感\n●ご予算\netc...&quot;,1,[[2143330440,null,false,null,null,null,null,null,null,null,[]]],null,null,null,null,null,null,[null,&quot;\u003cspan style\u003d\&quot;white-space:pre-wrap\&quot;\u003eご相談・ご依頼内容\u003c/span\u003e&quot;],[null,&quot;\u003cspan style\u003d\&quot;white-space:pre-wrap\&quot;\u003eお仕事の概要、ご相談内容等ご記入お願いいたします。\u003c/span\u003e\u003cbr\u003e\u003cspan style\u003d\&quot;white-space:pre-wrap\&quot;\u003e●制作物\u003c/span\u003e\u003cbr\u003e\u003cspan style\u003d\&quot;white-space:pre-wrap\&quot;\u003e●スケジュール感\u003c/span\u003e\u003cbr\u003e\u003cspan style\u003d\&quot;white-space:pre-wrap\&quot;\u003e●ご予算\u003c/span\u003e\u003cbr\u003e\u003cspan style\u003d\&quot;white-space:pre-wrap\&quot;\u003eetc...\u003c/span\u003e&quot;]],&quot;i21&quot;,&quot;i22&quot;,&quot;i23&quot;,false,&quot;i24&quot;]"
+2143330440
+

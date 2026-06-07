@@ -20,3 +20,6 @@
   font-weight: normal;
   margin-bottom: 5px;    /* 下の日本語との隙間 */
 }
+
+グラデーションcss
+background: linear-gradient(90deg,rgba(248, 174, 206, 1) 0%, rgba(252, 200, 171, 1) 25%, rgba(255, 249, 179, 1) 50%, rgba(211, 235, 164, 1) 75%, rgba(169, 205, 242, 1) 100%);

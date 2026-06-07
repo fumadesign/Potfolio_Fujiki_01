@@ -1,14 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>fuma design Portfolio</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <!--GoogleFonts読み込み-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&family=Zen+Kaku+Gothic+New&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/all_works.css">
 </head>
 
 <body>
+    <!-- ヘッダー部分 -->
+    <header id="header">
+        <h1 class="logo">
+            <a href="./index.html">
+                <img src="./images/logo_icon.svg" alt="fuma design logo" />
+            </a>
+        </h1>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="concept.html">CONCEPT</a></li>
+                <li><a href="about_me.html">ABOUT ME</a></li>
+                <li><a href="all_works.html">WORKS</a></li>
+                <li><a href="#WORK_FLOW">WORK FLOW</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <!-- コーディング5回目で ハンバーガー追記 -->
+        <div class="hamburger">
+            <span></span>
+        </div>
 
+        <!-- sp版ハンバーガー押したときにでるli -->
+        <nav class="header-nav-sp">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="concept.html">CONCEPT</a></li>
+                <li><a href="about_me.html">ABOUT ME</a></li>
+                <li><a href="all_works.html">WORKS</a></li>
+                <li><a href="#WORK_FLOW">WORK FLOW</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 全ページ共通見出しセクション -->
+    <secion class="head">
+        <div class="head-container">
+            <h2 class="head-title">
+                <div class="en">WORKS</div>
+                <div class="ja"> こんなデザイン作ってきました。</div>
+            </h2>
+        </div>
+    </secion>
+
+    <!-- 制作実績一覧セクション -->
+    <main>
+        <h3 class="all_works_h3">クリック(タップ)でそれぞれ詳しくご覧いただけます。</h3>
+        <section class="all_works">
+            <div class="all_works_inner">
+                <div class="banner_icecream">
+                    <a href="works_icecream.html">
+                        <img src="./images/works/icecream_SP_mockup.png" alt="アイスクリームバナースマホモックアップ画像">
+                        <img class="banner" src="./images/works/banner_icecream_01.jpg" alt="アイスクリームバナー高級ver">
+                    </a>
+                </div>
+                <h4>Banner</h4>
+                <p>期間限定 アイスクリーム広告</p>
+            </div>
+
+            <div class="all_works_inner">
+                <div class="banner_dxburger">
+                    <a href="works_dxburger.html">
+                        <img src="./images/works/mockup_dxburger.png" alt="激旨バーガーバナースマホモックアップ画像">
+                        <img class="banner" src="./images/works/banner_dxburger_01_square.jpg" alt="激旨バーガーバナー高級ver">
+                    </a>
+                </div>
+                <h4>Banner</h4>
+                <p>新作 デラックスバーガー広告</p>
+            </div>
+
+            <div class="all_works_inner">
+                <div class="website_portfolio">
+                    <a href="works_portfolio.html">
+                        <img src="./images/works/mockup_PCSP_Portfolio.png" alt="ポートフォリオPC/スマホモックアップ画像">
+                    </a>
+                </div>
+                <h4>Web Site</h4>
+                <p>本ポートフォリオサイト</p>
+            </div>
+
+            <div class="all_works_inner">
+                <div class="website_lifehair">
+                    <a href="works_LIFEhair.html">
+                        <img src="./images/works/mockup_PC_LIFEhair.png" alt="美容室LIFEhairPCモックアップ画像">
+                    </a>
+                </div>
+                <h4>Web Site</h4>
+                <p>美容室LIFEさま(架空) ランディングページ
+                </p>
+            </div>
+
+            <div class="all_works_inner">
+                <div class="website_designcafe">
+                    <a href="works_DESIGNCAFE.html">
+                        <img src="./images/works/mockup_PCSP_DESIGNCAFE.png" alt="DesigncafePC/スマホモックアップ画像">
+                    </a>
+                </div>
+                <h4>Web Site</h4>
+                <p>Design Cafeさま(架空) ランディングページ</p>
+            </div>
+
+            <div class="all_works_inner">
+                <div class="website_workers">
+                    <a href="works_WORKERS.html">
+                        <img src="./images/works/mockup_PCSP_WORKERS.png" alt="WORKERSPC/スマホモックアップ画像">
+                    </a>
+                </div>
+                <h4>Web Site</h4>
+                <p> WORKERSさま(架空) ランディングページ
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!--フッター部分-->
+    <footer>
+        <section id="footer">
+            <div class="footer_inner">
+                <h5 class="footer-logo">
+                    <a href="./index.html">
+                        <img src="./images/logo_icon.svg" alt="fuma design logo">
+                    </a>
+                </h5>
+                <div class="footer_main">
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="concept.html">CONCEPT</a></li>
+                            <li><a href="about_me.html">ABOUT ME</a></li>
+                            <li><a href="all_works.html">WORKS</a></li>
+                            <li><a href="#WORK_FLOW">WORK FLOW</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                    <p><small>&copy; 2026 fuma design</small></p>
+                </div>
+            </div>
+
+            <div class="to_Top_btn">
+                <a href="#header">
+                    <img src="./images/PC_toTOP_btn.png" alt="トップへ戻るボタン" /></a>
+
+            </div>
+        </section>
+
+
+    </footer>
 </body>
 
 </html>

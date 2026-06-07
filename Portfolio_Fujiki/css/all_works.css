@@ -14,6 +14,25 @@ img {
     width: auto;
 }
 
+/* リンクボタン */
+.PC_btn {
+    background-color: #fff;
+    display: flex;
+    width: 336px;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 160px;
+    border: .5px solid #3a3a3a;
+}
+
+.PC_btn_contact_center{
+    display: flex;
+    justify-content: center;
+    margin: 160px auto 200px;
+}
+
+
 /* ヘッダーセクション */
 #header {
     display: flex;
@@ -69,10 +88,6 @@ font-size: 32px;
 font-weight: 600;
 }
 
-.ja_head{
-    font-weight: 500;
-}
-
 /* フッターセクション */
 #footer{
     width:90%;
@@ -109,99 +124,88 @@ font-weight: 600;
     top: 30%;
 }
 
-/* ↑ページ共通 */
+/* ↑全ページ共通 */
 
-h3{
-    font-size: 48pt;
-    font-weight: 600;
-}
-
-/* コンセプト説明 */
-.concept_msg p{
-    font-size: 16px;
-    line-height: 2.0;
-    width: 490px;
-}
-
-.concept_snail, .concept_rainbow {
+/* all_worksセクション */
+.all_works{
     display: flex;
-    align-items: center;
-    gap: 48px;
-    margin-bottom: 64px;
-}
-
-.concept_rainbow img{
-    width: 312px;
-}
-
-.concept_msg {
-    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin: 80px auto;
-}
-
-/* クロスアイコンgeminiコピペ */
-.cross-icon {
-    position: relative;
-    display: inline-block;   
-    width: 64px;         /* ×の横幅 */
-    height: 64px;        /* ×の縦幅 */
-    margin: 0 40px;      /* 左右の適切なマージン */
-}
-
-.cross-icon::before,
-.cross-icon::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 2px;          /* 線の太さ（文字の太さに合わせると綺麗です） */
-    background-color: #3a3a3a; /* 線の色 */
-    margin-top: -1.5px;   /* 太さの半分を引いて中央配置 */
-}
-
-.cross-icon::before { transform: rotate(45deg); }
-.cross-icon::after { transform: rotate(-45deg); }
-
-.scroll_icon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.scroll_icon p{
-    padding-left: 16px;
-}
-
-/* ロゴ作成、キーワードFigjam */
-h4{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 80px;
-}
-
-.making_logo, .concept_branch{
-    text-align: center;
-}
-
-.making_logo{
-    margin-top:160px;
-    margin-bottom: 160px;
-    display: block;
-    align-items: center;
-}
-.concept_branch{
+    gap: 160px;
     margin-bottom: 200px;
 }
 
-.making_logo .logo{
-    width: 612px;
+.all_works_h3{
+    font-size: 16px;
+    text-align: center;
+    margin: 80px 0 40px 0;
 }
 
-.making_logo_inner{
+.all_works h4 {
+    font-size: 16px;
+    margin-top: 22px;
+    margin-bottom: 8px;
+}
+
+
+.banner{
+    width: 240px;
+    margin-left: 32px;
+}
+
+.all_works_inner{
+    min-width: 480px;
+}
+
+.banner_icecream{
+    background-color: #EBF4FF;
+    width: 480px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 40px;
+    padding: 60px 0;
+    border-radius: 16pt;
+}
+
+.banner_dxburger{
+    background-color: #EFD7CB;
+    width: 480px;
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+    border-radius: 16pt;
+}
+
+.website_portfolio{
+    background:linear-gradient(90deg,rgba(248, 174, 206, .4) 0%, rgba(252, 200, 171, .4) 25%, rgba(255, 249, 179, .4) 50%, rgba(211, 235, 164, .4) 75%, rgba(169, 205, 242, .4) 100%);
+    width: 480px;display: flex;
+    justify-content: center;
+    padding: 60px 0;
+    border-radius: 16pt;
+}
+
+.website_lifehair{
+    background-color: #F5CCCF;
+    width: 480px;
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+    border-radius: 16pt;
+}
+
+.website_designcafe{
+    background-color: #FEF7EC;
+    width: 480px;
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+    border-radius: 16pt;
+}
+
+.website_workers{
+    background-color: #FFEDA6;
+    width: 480px;
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+    border-radius: 16pt;
 }

@@ -1,0 +1,214 @@
+@charset "utf-8";
+/* ↓全ページ共通 */
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Altivo','Plus Jakarta Sans','Space Grotesk','Inter','Zen Kaku Gothic New', sans-serif;
+    background-color: #FFFEFB;
+    color:#3a3a3a;
+}
+
+img {
+    width: auto;
+}
+
+/* リンクボタン */
+.PC_btn {
+    background-color: #fff;
+    display: flex;
+    width: 336px;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 160px;
+    border: .5px solid #3a3a3a;
+}
+
+.PC_btn_contact_center{
+    display: flex;
+    justify-content: center;
+    margin: 160px auto 200px;
+}
+
+
+/* ヘッダーセクション */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.74%;
+    width: 100%;
+    top: 30px;
+    z-index: 99998;
+    background-color: #fff;
+}
+
+.header-nav ul {
+    display: flex;
+    gap: 26px;
+}
+
+.logo {
+    width: 160px;
+}
+
+/* PC版ではハンバーガー、SP版navを非表示にする */
+.hamburger,
+.header-nav-sp {
+    display: none;
+}
+
+/* 飛び先ページ見出し */
+.head-container {
+    display:block;
+    width: 100%;
+    height: 272px;
+    border-radius: 0px 0px 160px 0px;
+    background-color: #f9f9f9;
+    padding-top: 84px;
+    padding-bottom: 84px;
+    padding-left:160px;
+}
+
+.head-container h2 {
+    background-image: url(../images/heading_rainbow_img.png);
+    background-repeat: no-repeat;
+    padding: 20px 0px 30px 40px;
+}
+
+.head-title .en {
+font-size: 16px;
+margin-bottom: 16px;
+}
+
+.head-title .ja {
+font-size: 32px;
+font-weight: 600;
+}
+
+/* フッターセクション */
+#footer{
+    width:90%;
+    margin-left: 0;
+    padding: 80px 160px 40px 80px;
+    border-radius: 0px 0px 160px 0px;
+    background-color: #F9F9F9;
+    position: relative;
+}
+.footer_inner{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo{
+    width: 160px;
+}
+
+.footer_main{
+    text-align: right;
+}
+
+.footer-nav{
+    margin-bottom:80px;
+}
+
+.footer-nav ul {
+    display: flex;
+    gap: 26px;
+}
+
+.to_Top_btn{
+    position: absolute;
+    right: 0;
+    top: 30%;
+}
+
+/* ↑全ページ共通 */
+
+/* contact_formセクション */
+/* ユキノT紹介ページからコピペ */
+.contact_form{
+    margin-left: 160px;
+}
+
+.contact_form p{
+    line-height: 2.0;
+    margin: 80px 0;
+}
+
+.c-form {
+	max-width: 640px;
+}
+.c-form__item {
+	display: flex;
+    flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-bottom: 40px;
+}
+
+.c-form__input {
+	padding: 10px;
+    margin-bottom: 10px;
+}
+.c-form__label {
+	width: 90%;
+    margin-bottom:10px;
+}
+.c-form__input {
+	width: 90%;
+	font-size: 16px;
+	border: solid 1px #3a3a3a;
+	border-radius: 8px;
+}
+.c-form__input:focus-visible {
+	outline: #3a3a3a auto 1px;
+}
+
+.c-form__required {
+	color: #3a3a3a;
+	background: linear-gradient(90deg,rgba(248, 174, 206, .4) 0%, rgba(252, 200, 171, .4) 25%, rgba(255, 249, 179, .4) 50%, rgba(211, 235, 164, .4) 75%, rgba(169, 205, 242, .4) 100%);
+	border-radius: 8px;
+	padding: 10px 10px;
+	margin: 0 0 0 18px;
+}
+textarea.c-form__input {
+	height: 160px;
+}
+.c-form__submit {
+	text-align: center;
+}
+.c-form__submit button {
+	background-color: #fff;
+    display: flex;
+    width: 336px;
+    height: 56px;
+    justify-content: center;
+    margin: 160px auto 200px;
+    align-items: center;
+    border-radius: 160px;
+    border: .5px solid #3a3a3a;
+}
+
+.c-form__submit button:hover {
+	color: #3a3a3a;
+	background: linear-gradient(90deg,rgba(248, 174, 206, .4) 0%, rgba(252, 200, 171, .4) 25%, rgba(255, 249, 179, .4) 50%, rgba(211, 235, 164, .4) 75%, rgba(169, 205, 242, .4) 100%);
+    border:none;
+}
+
+/* thanksページ */
+.thanks_page{
+    background-image: url(../images/background_snail.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top:80px;
+    margin-left: 270px;
+}
+
+.thanks_page p{
+    font-size: 20px;
+    line-height: 2.0;
+    margin-top: 167px;
+    margin-left: 484px;
+}

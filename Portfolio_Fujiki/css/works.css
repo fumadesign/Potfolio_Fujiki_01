@@ -14,6 +14,25 @@ img {
     width: auto;
 }
 
+/* リンクボタン */
+.PC_btn {
+    background-color: #fff;
+    display: flex;
+    width: 336px;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 160px;
+    border: .5px solid #3a3a3a;
+}
+
+.PC_btn_contact_center{
+    display: flex;
+    justify-content: center;
+    margin: 160px auto 200px;
+}
+
+
 /* ヘッダーセクション */
 #header {
     display: flex;
@@ -69,10 +88,6 @@ font-size: 32px;
 font-weight: 600;
 }
 
-.ja_head{
-    font-weight: 500;
-}
-
 /* フッターセクション */
 #footer{
     width:90%;
@@ -109,99 +124,52 @@ font-weight: 600;
     top: 30%;
 }
 
-/* ↑ページ共通 */
+/* ↑全ページ共通 */
 
-h3{
-    font-size: 48pt;
-    font-weight: 600;
+/* 制作実績紹介セクション */
+.works {
+    display: flex;
+    margin-top: 84px;
 }
 
-/* コンセプト説明 */
-.concept_msg p{
-    font-size: 16px;
+.works_imgs{
+    display: flex;
+    margin: 0 auto;
+}
+
+.works_imgs_contents{
+    max-width: 480px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+}
+
+.works_imgs_contents img, .works_imgs img{
+    max-width: 480px;
+}
+
+.banner{
+    width: 320px;
+}
+
+.SPmockup{
+    width: 320px;
+}
+
+.works_description{
+    margin: 0 auto;
+}
+.works_description h3{
+    font-size: 20pt;
+    font-weight: 600;
+    margin-bottom: 17px;
+}
+
+.works_description p{
+    width: 432px;
+    font-size: 16pt;
     line-height: 2.0;
-    width: 490px;
-}
-
-.concept_snail, .concept_rainbow {
-    display: flex;
-    align-items: center;
-    gap: 48px;
-    margin-bottom: 64px;
-}
-
-.concept_rainbow img{
-    width: 312px;
-}
-
-.concept_msg {
-    display: flex;
-    justify-content: center;
-    margin: 80px auto;
-}
-
-/* クロスアイコンgeminiコピペ */
-.cross-icon {
-    position: relative;
-    display: inline-block;   
-    width: 64px;         /* ×の横幅 */
-    height: 64px;        /* ×の縦幅 */
-    margin: 0 40px;      /* 左右の適切なマージン */
-}
-
-.cross-icon::before,
-.cross-icon::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 2px;          /* 線の太さ（文字の太さに合わせると綺麗です） */
-    background-color: #3a3a3a; /* 線の色 */
-    margin-top: -1.5px;   /* 太さの半分を引いて中央配置 */
-}
-
-.cross-icon::before { transform: rotate(45deg); }
-.cross-icon::after { transform: rotate(-45deg); }
-
-.scroll_icon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.scroll_icon p{
-    padding-left: 16px;
-}
-
-/* ロゴ作成、キーワードFigjam */
-h4{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 80px;
-}
-
-.making_logo, .concept_branch{
-    text-align: center;
-}
-
-.making_logo{
-    margin-top:160px;
-    margin-bottom: 160px;
-    display: block;
-    align-items: center;
-}
-.concept_branch{
-    margin-bottom: 200px;
-}
-
-.making_logo .logo{
-    width: 612px;
-}
-
-.making_logo_inner{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
+    margin-bottom: 40px;
 }
